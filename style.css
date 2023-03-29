@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.7s;
+}
+
+body{
+    background-color: rgb(62, 62, 62);
+}
+
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 370px;
+    height: 640px;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.img-box{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.content{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0px 20px;
+    bottom: -100%;
+}
+
+
+
+.calendar {
+    width: 160px;
+    height: 24px;
+    background: url(/calend.png) no-repeat, left, center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 30px;
+  }
+
+
+.content h2{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+.content h2 span{
+    text-align: center;
+    color: rgb(249, 168, 168);
+    font-size: 20px;
+}
+
+.content p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+}
+
+
+.content-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    list-style: none;
+
+}
+
+.main:hover{
+    box-shadow: 0px 1px 15px 4px rgb(255, 255, 255);
+} 
+
+.main:hover .content{
+    bottom: 0;
+   
+} 
+
+
+.main:hover .img-box{
+    opacity: 0.7;
+}
+
